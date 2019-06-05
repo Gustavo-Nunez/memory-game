@@ -26,7 +26,7 @@ class App extends Component {
       if (attempts < 4) {
           this.setState({ attempts: attempts + 1 });
       } else {
-         // this.resetGame();
+          this.resetGame();
       }
   }
 
