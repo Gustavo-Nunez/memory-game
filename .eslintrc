@@ -1,0 +1,57 @@
+{
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es6": true,
+        "jest": true,
+        "node": true
+    },
+    "extends": ["airbnb", "plugin:jest/recommended"],
+    "parser": "babel-eslint",
+    "plugins": [
+        "react",
+        "jest"
+    ],
+    "rules": {
+        "import/no-dynamic-require": 0,
+        "react/jsx-filename-extension": [
+            1,
+            { "extensions": [".js", ".jsx"] }
+        ],
+        "react/jsx-indent": [2, 4],
+        "react/jsx-indent-props": [2, 2],
+        "jsx-a11y/tabindex-no-positive": 0,
+        "jsx-a11y/no-noninteractive-tabindex": 0,
+        "jsx-a11y/href-no-hash": "off",
+        "jsx-a11y/no-static-element-interactions": "off",
+        "indent": [
+            "error",
+            4
+        ],
+        "linebreak-style": [
+            "error",
+            "unix"
+        ],
+        "quotes": [
+            "error",
+            "single"
+        ],
+        "semi": [
+            "error",
+            "always"
+        ],
+        "function-paren-newline": [
+            "error",
+            "consistent"
+        ],
+        "no-undef": "error",
+        "no-underscore-dangle": [2, { "allow": ["_type"] }]
+    },
+    "settings": {
+        "react": {
+            "createClass": "createClass",
+            "pragma": "React",
+            "version": "16.0.0"
+        }
+    }
+}
