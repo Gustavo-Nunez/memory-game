@@ -1,8 +1,24 @@
-.App {
-  padding:35px;
-  width:40%;
-  margin: 20px auto;
+.Game {
+  position: absolute;
+  padding: 20% 15%;
+  width:100%;
+  // margin: 20px auto;
   border-radius: 10px;
+}
+
+.newGameButton {
+  position: absolute;
+  transform: translate(-70%, 50%);
+    left: 50%;
+    margin: 5%;
+}
+
+.logo {
+  position: relative;
+  transform: translate(-50%, 30%);
+  top: 5%;
+  left: 50%;
+  width: 30%;
 }
 
 .App-logo {
@@ -33,4 +49,16 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation:landscape) {
+  .Game {
+    padding: 5% 15%;
+  }
+  .logo {
+    width: 20%;
+  }
+  .newGameButton {
+    margin: 0% 5%;
+}
 }
