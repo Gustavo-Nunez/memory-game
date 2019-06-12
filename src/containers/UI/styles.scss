@@ -2,4 +2,47 @@
 .UI {
     display: flex;
     justify-content: space-between;
+    margin-top: 8%;
+
+    .Pairs {
+        display: flex;
+    }
+
+    .PairsText {
+        font-family: 'Source Sans Pro', sans-serif;
+        font-style: italic;
+        color: #262261;
+        font-size: 35px;
+    }
+
+    .PairNumber {
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 47px;
+        margin-left: 15px;
+        margin-top: -8px;
+        color: #00A8BF;
+        font-weight: bold;
+    }
+
+    .healthBarContainer {
+        // width: 100%;
+        overflow: hidden;
+        -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+        transition: width 2s;
+        img {
+            object-fit: cover;
+            width: 235px; 
+        }
+    }
+    
+    .EmptyBoxContainer {
+        border-color: #BFBFBF;
+        border-style: groove;
+        border-radius: 10px;
+        width: 235px;
+        height: 20px;
+        line-height: 12px;
+        background-color: #DADCDC;
+        margin-top: 5px;
+    }
 }

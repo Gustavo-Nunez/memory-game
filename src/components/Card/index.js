@@ -4,10 +4,10 @@ import React from 'react';
 const Card = props => (
     <div className={`card ${!props.close ? ' opened' : ''} ${props.complete ? ' matched' : ''}`} onClick={props.click}>
         <div className="front">
-        ?
+            <img className="backCard" src="http://memorygame.ioconnectservices.com/Memo-Card.png" />
         </div>
         <div className="back">
-            <img src={"https://raw.githubusercontent.com/samiheikki/javascript-guessing-game/master/static/logos/" + props.framework + ".png"}/>
+            <img src={`http://memorygame.ioconnectservices.com/${props.framework}-Icon.png`}/>
         </div>
     </div>
 );

@@ -1,15 +1,25 @@
 import React from 'react';
-import newGame from '../../images/new-game-button.png';
 import './styles.scss';
 
 const UI = props => (
-    <div className="UI">
-        <div>Pairs: {props.pairs}</div>
-        <div>Attempt: {props.attempts}</div>
+    <div className="row UI">
+        <div className="col-6" style={{ marginTop: '-2%' }}>
+            <div className="Pairs">
+                <div className="PairsText">Pairs:</div>
+                <div className="PairNumber">{props.pairs}</div>
+            </div>
+            <div className="EmptyBoxContainer">
+                <div className="healthBarContainer" style={{ width: `${props.health}%` }}>
+                    <img src="http://memorygame.ioconnectservices.com/Life-Bar-colors.png" />
+                </div>
+            </div>
+        </div>
         {
             props.wonGame ? (
-                <div onClick={props.reshuffle} className="newGameButton">
-                    <img src={newGame} />
+                <div className="col-6">
+                    <div onClick={props.reshuffle} className="newGameButton">
+                        <img src="http://memorygame.ioconnectservices.com/New-Game-Button.png" />
+                    </div>
                 </div>
             ) : null
         }
